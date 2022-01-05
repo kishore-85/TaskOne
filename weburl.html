@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edgeto0">
+    <title>document</title>
+</head>
+<body>
+   <!-- <script>
+       console.log(document.URL);
+   </script> -->
+<p id="demo"></p>
+    <script>
+       let today = new Date();
+       var date = today.getDate();
+       var year=today.getUTCFullYear();
+       var month= today.getMonth();
+       document.getElementById('demo').innerHTML=date+'-'+month+'-'+year;
+
+       let time= today.getHours()
+       let minutes=today.getMinutes()
+        
+       document.getElementById('demo').innerHTML=time+':'+minutes;
+   </script> 
+</body>
+</html>
